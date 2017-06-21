@@ -9,5 +9,5 @@ Por ejemplo, si tenemos una puntuación máxima de 4 puntos, necesitamos encontr
 	4 -> Necesitameremos una carta más, por ejemplo el 3, 3+1=4
 Así que finalmente tendremos 3 cartas (1,2 y 3) para contar hasta 4.
 
-Si analizamos bien el problema, nos damos cuenta de que dado una puntuaci´n
+Si analizamos bien el problema, nos damos cuenta de que lo que realmente nos están pidiendo es cuantos bits necesitamos para representar la puntuación máxima del juego. Para 20 por ejemplo necesitaríamos 5 bits (10100), que en el problema serían las cartas 1, 2, 4, 8, 16. Esto lo podemos conseguir de manera iterativa dividiendo la puntuación por 2 hasta llegar a 1, o bien de manera directa aplicando logaritmo en base dos con redondeo hacia arriba.
 
